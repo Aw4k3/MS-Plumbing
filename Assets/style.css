@@ -1,0 +1,131 @@
+:root {
+    --blue: rgb(0, 92, 145);
+    --orange: rgb(255, 166, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../Assets/Seamless\ Pipes.jpg");
+    backdrop-filter: blur(4px);
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.5));
+    color: white;
+}
+
+nav {
+    height: 80px;
+    padding: 0px 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--blue);
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+footer {
+    height: 100px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 0px;
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: hue-rotate(10deg);
+}
+
+.nav-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    padding: 6px 16px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: solid 2px var(--orange);
+}
+
+.main-content {
+    top: 80px;
+}
+
+.content-div > h1 {
+    font-size: 32px;
+}
+
+.content-div { 
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.orange-text {
+    color: var(--orange);
+}
+
+.blue-text {
+    color: var(--blue);
+}
+
+.registers {
+    height: 60px;
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        height: auto;
+        position: relative;
+        display: block;
+        padding: 0px 10px;
+        background-color: var(--blue);
+        filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.5));
+    }
+
+    .nav-button-container {
+        flex-direction: column;
+    }
+}

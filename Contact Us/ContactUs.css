@@ -1,0 +1,28 @@
+form {
+    width: 600px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, option, textarea {
+    height: 34px;
+    width: 100%;
+    border: rgb(128, 128, 128) 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, option {
+    padding: 0px 10px;
+}
+
+textarea {
+    height: 120px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.field {
+    width: 100%;
+    margin: 10px 0px;
+}

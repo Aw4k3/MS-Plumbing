@@ -1,0 +1,53 @@
+:root {
+    --blue: rgb(0, 105, 167);
+    --orange: rgb(255, 166, 0);
+}
+
+ul {
+    margin: 4px;
+    padding-left: 20px;
+}
+
+.landing {
+    height: 800px;
+    background-image: url("../Assets/Bathroom.jpeg");
+    background-size: cover;
+    background-position: 50% 40%;
+}
+
+.landing-text {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 250%;
+    color: white;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+.card-viewer {
+    margin: 20px 0px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 6px;
+    /* background: linear-gradient(180deg, rgb(36, 124, 255) 0%, rgb(243, 218, 108) 70%, rgba(255,171,0,1) 100%); */
+    background-color: var(--blue);
+    color: white;
+}
+
+.user-bar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.service-icon {
+    position: relative;
+    height: 50px;
+    filter: invert();
+}

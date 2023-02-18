@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../Assets/style.css">
+    <link rel="stylesheet" href="ContactUs.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="../Homepage/index.html"><img src="../Assets/Logo.png" height="100px" alt="Logo"></a>
+        <!-- Navigation Buttons -->
+        <div class="nav-button-container">
+            <a class="nav-button" href="../Homepage/index.html#about-us">About Us</a>
+            <a class="nav-button" href="../Homepage/index.html#services">Services</a>
+            <a class="nav-button" href="../Homepage/index.html#reviews">Reviews</a>
+            <a class="nav-button" href="../Gallery/Gallery.html">Gallery</a>
+            <a class="nav-button" href="#">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Gallery -->
+    <section class="main-content">
+        <div class="content-div">
+            <h1>Contact Us</h1>
+            <br>
+            <p>Call us at <b>07701051754</b> or send email us at <b>dedaergis7@gmail.com</b></p>
+            <br>
+            <p style="text-align: center;">
+                In case of an emergency please call us on the phone number above.
+                <br>
+                For all your other plumbing needs feel free to contact us by phone, email or via the form.
+            </p>
+            <br>
+            <!-- Emails will be sent to the email associated with this formspree account -->
+            <form action="https://formspree.io/f/mgebkvvo" method="post">
+                <div class="field">
+                    <p>Name</p>
+                    <input type="text" disabled>
+                </div>
+
+                <div class="field">
+                    <p>Email</p>
+                    <input type="email" name="email">
+                </div>
+
+                <div class="field">
+                    <p>Phone</p>
+                    <input type="number" disabled>
+                </div>
+
+                <div class="field">
+                    <p>Service</p>
+                    <select disabled>
+                        <option value="boiler">Boiler</option>
+                        <option value="heating">Heating</option>
+                        <option value="general-plumbing">General Plumbing</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <p>Message</p>
+                    <textarea name="message"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Extra Content in the Footer -->
+    <footer>
+        <h2>Mustafa Plumbing & Heating</h2>
+        <p>Contact Us • 07701051754 • dedaergis7@gmail.com</p>
+        <p>Copyright @ 2023 Ergis. All rights reserved</p>
+        <div class="registers">
+            <img src="../Assets/Ciphe Register.png" alt="Ciphe Register">
+            <img src="../Assets/Gas Safe Register.png" alt="Gas Safe Register">
+        </div>
+    </footer>
+</body>
+
+</html>
